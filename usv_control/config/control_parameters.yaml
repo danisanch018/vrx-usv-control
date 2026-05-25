@@ -1,0 +1,85 @@
+ilos_guidance: 
+  ros__parameters:
+    use_sim_time: true
+    # acceptance_radius: 7.0
+    # delta_lookahead: 12.0
+    # k : 0.15
+    # ref_u: 1.5
+    #for the S path
+    acceptance_radius: 5.0
+    delta_lookahead: 6.0
+    k : 0.3
+    ref_u: 1.1
+
+# control_usv: 
+#   ros__parameters:
+#     Hi_00: 0.0
+#     Hi_01: -254.0265
+#     Hi_10: -278.2239
+#     Hi_11: 0.0
+    
+#     Hc_00: 0.0
+#     Hc_01: 824.2
+#     Hc_02: 0.0
+#     Hc_03: 0.0
+#     Hc_10: 3421.1
+#     Hc_11: 0.0
+#     Hc_12: -0.4
+#     Hc_13: 1117.7
+
+
+# control_usv: 
+#   ros__parameters:
+#     use_sim_time: true
+    
+#     Hi_00: 0.0
+#     Hi_01: -70.0  
+#     Hi_10: -160.0  
+#     Hi_11: 0.0
+    
+    
+#     Hc_00: 0.0
+#     Hc_01: 1200.0    
+#     Hc_02: 0.0
+#     Hc_03: 0.0
+#     Hc_10: 12000.0 
+#     Hc_11: 0.0
+#     Hc_12: 50.0     
+#     Hc_13: 3000.0   
+
+# control_usv: 
+#   ros__parameters:
+#     use_sim_time: true
+
+#     Hi_00: 0.0
+#     Hi_01: -191.5911
+#     Hi_10: -293.7615
+#     Hi_11: 0.0
+    
+#     Hc_00: 0.0
+#     Hc_01: 1327.0
+#     Hc_02: 0.0
+#     Hc_03: 0.0
+#     Hc_10: 4883.5
+#     Hc_11: 0.0
+#     Hc_12: -0.4
+#     Hc_13: 1545.5
+
+control_usv: 
+  ros__parameters:
+    use_sim_time: true
+    
+    Hi_00: 0.0
+    Hi_01: -70.0  
+    Hi_10: -160.0  
+    Hi_11: 0.0
+    
+    
+    Hc_00: 0.0
+    Hc_01: 1200.0    
+    Hc_02: 0.0
+    Hc_03: 0.0
+    Hc_10: 5000.0   
+    Hc_11: 0.0
+    Hc_12: 50.0     
+    Hc_13: 2500.0   

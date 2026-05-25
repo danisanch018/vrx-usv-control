@@ -1,0 +1,38 @@
+# --- Binarios y Artefactos de Compilación ---
+# Aunque estés en src, a veces se generan archivos de Python o C++ aquí
+*.pyc
+*~
+__pycache__/
+.pytest_cache/
+*.so
+*.o
+*.a
+
+# --- Archivos de Configuración de IDEs ---
+.vscode/
+.idea/
+.project
+.pydevproject
+.settings/
+*.swp
+*.swo
+
+# --- Archivos Pesados y Datos (Heavy Assets) ---
+# Evita subir bolsas de datos, mapas grandes o modelos complejos
+*.bag
+*.mcap
+*.db3
+*.pbstream
+*.pgm
+*.yaml.bin
+*.pcd
+*.ply
+*.stl
+*.dae
+# Logs específicos de aplicaciones que terminan en src
+*.log
+
+# --- Archivos de Usuario y SO ---
+.DS_Store
+Thumbs.db
+core
