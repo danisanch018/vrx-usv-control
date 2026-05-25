@@ -1,5 +1,4 @@
-# --- Binarios y Artefactos de Compilación ---
-# Aunque estés en src, a veces se generan archivos de Python o C++ aquí
+
 *.pyc
 *~
 __pycache__/
@@ -8,7 +7,6 @@ __pycache__/
 *.o
 *.a
 
-# --- Archivos de Configuración de IDEs ---
 .vscode/
 .idea/
 .project
@@ -17,8 +15,6 @@ __pycache__/
 *.swp
 *.swo
 
-# --- Archivos Pesados y Datos (Heavy Assets) ---
-# Evita subir bolsas de datos, mapas grandes o modelos complejos
 *.bag
 *.mcap
 *.db3
@@ -29,10 +25,9 @@ __pycache__/
 *.ply
 *.stl
 *.dae
-# Logs específicos de aplicaciones que terminan en src
+
 *.log
 
-# --- Archivos de Usuario y SO ---
 .DS_Store
 Thumbs.db
 core
