@@ -17,6 +17,7 @@ nmpc_path_follower:
     B_width: 2.06 #distance between thrusters
     N: 20 #steps for prediction
     dt: 0.1
+    #coefficients for wind, you need to change it in the sydney_regatta.sdf too
     cx: 0.5
     cy: 0.5
     cn: 0.33
