@@ -1,11 +1,11 @@
-# 🚢 VRX USV Control — ILOS + LQR & NMPC
+# VRX USV Control — ILOS + LQR & NMPC
 
 > Autonomous surface vehicle (USV) control framework built on top of the [VRX](https://github.com/osrf/vrx) simulation environment.  
 > Implements and compares two independent control strategies: **ILOS + LQR** and **NMPC**.
 
 ---
 
-## 📖 Overview
+## Overview
 
 This repository provides a complete ROS 2 control stack for simulating and evaluating two autonomous guidance and control approaches for an Unmanned Surface Vehicle (USV) in the VRX Gazebo environment:
 
@@ -16,7 +16,7 @@ Both controllers can be tested independently on configurable trajectories (Hexag
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 ### 1. Install Docker or ROS 2 Jazzy
 
@@ -24,12 +24,12 @@ You need either:
 - **Docker** (recommended for a clean, reproducible environment), or
 - **ROS 2 Jazzy** installed natively on your machine.
 
-> 📖 Follow the official VRX installation guide:  
-> 👉 [https://github.com/osrf/vrx/wiki/installation_method_tutorial](https://github.com/osrf/vrx/wiki/installation_method_tutorial)
+> Follow the official VRX installation guide:  
+> [https://github.com/osrf/vrx/wiki/installation_method_tutorial](https://github.com/osrf/vrx/wiki/installation_method_tutorial)
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Step 1 — Create the VRX workspace and clone the official VRX repository
 
@@ -58,7 +58,7 @@ source install/setup.bash
 
 ---
 
-## 🗂️ Configuration
+## Configuration
 
 ### Spawn Position
 
@@ -117,7 +117,7 @@ vrx-usv-control/usv_control/worlds/sydney_regatta.sdf
 
 ---
 
-## 🚀 Launching the System
+## Launching the System
 
 ### Full system launch (controller + path publisher)
 
@@ -150,7 +150,7 @@ Then inside RViz:
 
 ---
 
-## 🧪 Experimental Results
+## Experimental Results
 
 The following results compare the performance of both controllers under three environmental configurations:
 
@@ -170,10 +170,13 @@ The following results compare the performance of both controllers under three en
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 vrx-usv-control/
+├── scripts/
+│ └── lqr_gains.m # Offline LQR gain computation
+│
 ├── usv_control/                     # C++ package (LQR controller & setup)
 │   ├── config/
 │   │   ├── control_parameters.yaml  # LQR gain tuning
@@ -198,7 +201,7 @@ vrx-usv-control/
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 This repository was developed using the [VRX (Virtual RobotX)](https://github.com/osrf/vrx) simulation framework, maintained by the Open Source Robotics Foundation (OSRF). All VRX-related components are subject to their original license and terms.
 
@@ -216,6 +219,6 @@ If you use this work or the VRX simulation environment, please cite the official
 ```
 ---
 
-## 📬 Contact
+## Contact
 
 For questions, issues, or contributions, feel free to open an [issue](https://github.com/danisanch018/vrx-usv-control/issues).
